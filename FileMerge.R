@@ -29,7 +29,7 @@ for (i in myfiles) {
     temp=read.xlsx(i)
   } #reads excel files
   temp$source=basename(i)
-  dataL[[i]]=temp  
+  dataL[[basename(i)]]=temp  
 }
 
 CombinedData=do.call(rbind, dataL)
