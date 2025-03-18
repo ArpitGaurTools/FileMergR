@@ -34,4 +34,4 @@ for (i in myfiles) {
 
 CombinedData=do.call(rbind, dataL)
 
-write.csv(CombinedData, file = "CombinedData.csv")
+write.csv(CombinedData, file = "CombinedData.csv", , row.names = FALSE)
