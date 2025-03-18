@@ -1,4 +1,4 @@
-# FileMergR
+# FileMergeR
 Merge multiple .xlsx and .csv files in a folder, by header information.
 Download FileMerge.R
 Open file in R
