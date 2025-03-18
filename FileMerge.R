@@ -23,10 +23,12 @@ dataL=list()
 for (i in myfiles) {
   
   extension <- tools::file_ext(i) #reads extension
-  if( extension == ".csv") {temp=read.csv(i) #reads csv files
-  else if( extension == ".xlsx")tem<-read.xlsx(i)} #reads excel files
-  tem$source=basename(i)
-  dataL[[i]]=tem  
+  if( extension == ".csv") {
+    temp=read.csv(i)} #reads csv files
+  else if(extension == ".xlsx"){
+    temp=read.xlsx(i)} #reads excel files
+  temp$source=basename(i)
+  dataL[[i]]=temp  
 }
 
 CombinedData=do.call(rbind, dataL)
