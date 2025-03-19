@@ -22,10 +22,10 @@ dataL=list()
 
 for (i in myfiles) {
   extension <- tools::file_ext(i) #reads extension
-  if( extension == ".csv") {
+  if( extension == "csv") {
     temp=read.csv(i)
   } #reads csv files
-  else if(extension == ".xlsx"){
+  else if(extension == "xlsx"){
     temp=read.xlsx(i)
   } #reads excel files
   temp$source=basename(i)
